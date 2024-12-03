@@ -1,0 +1,135 @@
+:root {
+  --box-bg: #dc2626;
+  --box-hover: #ef4444;
+  --box-opened: #166534;
+  --text-light: #ffffff;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-image: url(https://i0.wp.com/css-tricks.com/wp-content/uploads/2018/08/radial-gradient.png?ssl=1);
+  background-size: cover;
+  padding: 2rem 1rem;
+}
+
+h2 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h4 {
+  color: limegreen;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #991b1b;
+  border-radius: 1rem;
+  list-style: none;
+}
+
+.calendar-box {
+  position: relative;
+  aspect-ratio: 1;
+  background-color: var(--box-bg);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--text-light);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-box:hover, .calendar-box:focus {
+  background-color: var(--box-hover);
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.calendar-box.opened {
+  background-image: url('./candycane.png');
+  background-size: cover;
+  background-position: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  background-color: whitesmoke;
+}
+
+.calendar-box .number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.calendar-box.opened .number {
+  color: #166534;
+  font-size: 2.5rem;
+}
+
+.calendar-box .fa-gift {
+  font-size: 2rem;
+}
+
+.calendar-box.opened .fa-gift {
+  color: gold;
+  animation: rotate 2s ease-in-out infinite;
+}
+
+@keyframes rotate {
+ 0% {
+   transform: rotate(0deg);
+ }
+ 25% {
+   transform: rotate(20deg);
+ }
+ 75% {
+   transform: rotate(-20deg);
+ }
+ 100% {
+   transform: rotate(0deg);
+ }
+}
+
+.calendar-box .description {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.calendar-box.opened .description {
+  font-weight: 600;
+  font-size: larger;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .calendar-container {
+      grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+#daysCounter {
+    color: gold;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
