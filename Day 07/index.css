@@ -1,0 +1,156 @@
+/*
+Link to Figma: https://scrimba.com/links/santa-saas-figma
+*/
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  --red: rgba(143, 0, 2, 0.83);
+  --light-red: #fff2f2;
+  --dark-red: #470000;
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background: #ffffff;
+}
+
+/* Header Section */
+header {
+    overflow: hidden;
+}
+
+.headerCircle {
+    position: absolute;
+    width: 1300px;
+    height: 825px;
+    z-index: -1;
+    border-radius: 0 0 4000px 0;
+    background-color: var(--red);
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.login-btn {
+  padding: 12px 45px;
+  border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-right: 5px;
+}
+
+.signup-btn {
+  padding: 12px 45px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--red);
+  border: 1px solid #fff;
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+  width: 916px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header p {
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 200;
+  font-style: normal;
+  margin-bottom: 2rem;
+  width: 579px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 32px;
+}
+
+.tryDemoBtns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.try-btn {
+  padding: 12px 45px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--red);
+  border: 1px solid #fff;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+
+.demo-btn {
+  padding: 12px 45px;
+  border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+
+.dashboardImg {
+  max-width: 787px;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px -12px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#customer img {
+  width: 100px;
+}
