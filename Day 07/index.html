@@ -10,9 +10,8 @@
   </head>
   <body>
     <header>
-      
       <img src="images/header2.png" alt="" class="headerImg" />
-      
+
       <nav>
         <div class="logo">
           <img src="images/logo.svg" alt="GiftChain.ai logo" />
@@ -22,8 +21,9 @@
         <ul>
           <li><a href="#product">Product</a></li>
           <li><a href="#solution">Solution</a></li>
-          <li><a href="#customer">Customer</a></li>
           <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#customer">Customer</a></li>
+
           <li><a href="#about">About us</a></li>
         </ul>
         <div>
@@ -51,93 +51,274 @@
       />
     </header>
     <main>
-      <section id="product">
+      <section class="serviceSection" id="product">
         <h2>Everything Santas Need In One Platform</h2>
         <p>
           We automated Santa's job and added it to the blockchain so that you
-          don’t have to do it.
+          don't have to do it.
         </p>
-        <div>
-          <h3>On-chain Record</h3>
-          <p>
-            Each gift is minted as an NFT on our decentralized protocol,
-            creating a permanent, tamper-proof record.
-          </p>
-          <a
-            href="#on-chain-record"
-            aria-label="Learn more about on-chain records"
-            >Learn more</a
-          >
-        </div>
-        <div>
-          <h3>AI Gift Ideas</h3>
-          <p>
-            Input a child’s behavior and interest, and our LLM-powered AI agent
-            will generate the perfect gift.
-          </p>
-          <a href="#ai-gift-ideas" aria-label="Learn more about AI gift ideas"
-            >Learn more</a
-          >
-        </div>
-        <div>
-          <h3>Sleigh Optimization</h3>
-          <p>
-            Smart contracts and AI combined to automate global gift delivery
-            logistics, optimizing your routes for efficiency.
-          </p>
-          <a
-            href="#sleigh-optimization"
-            aria-label="Learn more about sleigh optimization"
-            >Learn more</a
-          >
-        </div>
-        <div>
-          <h3>Full Observability</h3>
-          <p>
-            We monitor every child's behavior year-round, tracking every good
-            and bad deed with zero downtime.
-          </p>
-          <a
-            href="#full-observability"
-            aria-label="Learn more about full observability"
-            >Learn more</a
-          >
+        <div class="serviceContainer">
+          <div class="serviceCards">
+            <div class="serviceInfo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M9.99998 31.6667C5.85784 31.6667 3.33331 28.3088 3.33331 24.1667C3.33331 20.0246 6.69118 16.6667 10.8333 16.6667H11.6666V15C11.6666 10.3976 15.3976 6.66669 20 6.66669C24.6024 6.66669 28.3333 10.3976 28.3333 15V16.6667H29.1666C33.3088 16.6667 36.6666 20.0246 36.6666 24.1667C36.6666 28.3088 34.1421 31.6667 30 31.6667"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.9999 32.5001V25.8334C14.9999 25.3732 15.373 25.0001 15.8333 25.0001H24.1666C24.6268 25.0001 24.9999 25.3732 24.9999 25.8334V32.5001C24.9999 32.9603 24.6268 33.3334 24.1666 33.3334H15.8333C15.373 33.3334 14.9999 32.9603 14.9999 32.5001Z"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.6666 25.0001V23.3334C16.6666 21.4924 18.159 20.0001 20 20.0001V20.0001C21.8409 20.0001 23.3333 21.4924 23.3333 23.3334V25.0001"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h3>On-chain Record</h3>
+              <p>
+                Each gift is minted as an NFT on our decentralized protocol,
+                creating a permanent, tamper-proof record.
+              </p>
+              <a
+                href="#on-chain-record"
+                aria-label="Learn more about on-chain records"
+                >Learn more</a
+              >
+            </div>
+          </div>
+
+          <div class="serviceCards">
+            <div class="serviceInfo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M33.9182 14.4067C35.1792 17.5445 35.3429 21.0164 34.3827 24.259C33.4225 27.5016 31.3947 30.3246 28.6285 32.2698C25.8622 34.2151 22.5198 35.1686 19.1435 34.9755C17.7201 34.8941 16.326 34.6109 15 34.1421M23.3334 5.375C20.2493 4.67201 17.0157 4.96109 14.0979 6.2099C10.989 7.54053 8.42085 9.88268 6.81031 12.8563C6.53705 13.3608 6.29408 13.8785 6.08183 14.4067C5.04317 16.9912 4.74046 19.8257 5.22558 22.5914C5.40694 23.6254 5.69509 24.6309 6.08183 25.5932"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="26.6667"
+                  cy="6.66658"
+                  r="3.33333"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                />
+                <circle
+                  cx="11.6667"
+                  cy="33.3333"
+                  r="3.33333"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M15.6671 16.685L19.3959 15.2349C19.7845 15.0838 20.2155 15.0838 20.6041 15.2349L24.3329 16.685C24.7351 16.8414 25 17.2286 25 17.6602V19.2491C25 21.4755 23.9721 23.5772 22.2147 24.9441C20.912 25.9572 19.088 25.9572 17.7853 24.9441C16.0279 23.5772 15 21.4755 15 19.2491V17.6602C15 17.2286 15.2649 16.8414 15.6671 16.685Z"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h3>AI Gift Ideas</h3>
+              <p>
+                Input a child's behavior and interest, and our LLM-powered AI
+                agent will generate the perfect gift.
+              </p>
+              <a
+                href="#ai-gift-ideas"
+                aria-label="Learn more about AI gift ideas"
+                >Learn more</a
+              >
+            </div>
+          </div>
+
+          <div class="serviceCards">
+            <div class="serviceInfo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <path
+                  d="M11.6668 16.6667H10.8334C6.69128 16.6667 3.33342 20.0246 3.33342 24.1667C3.33342 28.3088 5.85795 31.6667 10.0001 31.6667H30.0001C34.1422 31.6667 36.6668 28.3088 36.6668 24.1667C36.6668 20.0246 33.3089 16.6667 29.1668 16.6667H28.3334V15C28.3334 10.3976 24.6025 6.66669 20.0001 6.66669C15.3977 6.66669 11.6668 10.3976 11.6668 15V16.6667Z"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h3>Sleigh Optimization</h3>
+              <p>
+                Smart contracts and AI combined to automate global gift delivery
+                logistics, optimizing your routes for efficiency.
+              </p>
+              <a
+                href="#sleigh-optimization"
+                aria-label="Learn more about sleigh optimization"
+                >Learn more</a
+              >
+            </div>
+          </div>
+
+          <div class="serviceCards">
+            <div class="serviceInfo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="15"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                />
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="8.33333"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M26.6667 26.6667L30 30"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.3333 26.6667L10 30"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.3333 13.3333L10 9.99998"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M26.6667 13.3333L30 9.99998"
+                  stroke="#8F0002"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h3>Full Observability</h3>
+              <p>
+                We monitor every child's behavior year-round, tracking every
+                good and bad deed with zero downtime.
+              </p>
+              <a
+                href="#full-observability"
+                aria-label="Learn more about full observability"
+                >Learn more</a
+              >
+            </div>
+          </div>
         </div>
       </section>
-      <section id="solution">
-        <h2>Say goodbye to gift chaos this year</h2>
-        <p>
-          No need to worry about your gift being lost or delivered to the wrong
-          child. We’ll handle every single one.
-        </p>
-        <p>More than 10,000 elves have tried GiftChain.ai!</p>
-        <button aria-label="Try GiftChain.ai for free">Try for free</button>
+      <section class="adSection" id="solution">
+        <div class="adContainer">
+          <div class="adCards">
+            <div class="adInfo">
+              <h2>Say goodbye to gift chaos this year</h2>
+              <p>
+                No need to worry about your gift being lost or delivered to the
+                wrong child. We’ll handle every single one.
+              </p>
+              <div>
+                <div>
+                  <img src="" alt="" />
+                  <img src="" alt="" />
+                  <img src="" alt="" />
+                </div>
+                <p>More than 10.000 elfs have tried</p>
+              </div>
+              <button aria-label="Try GiftChain.ai for free" class="try-btn">
+                Try for free
+              </button>
+            </div>
+            <div class="ad">
+              <img src="/images/dashboard.png" alt="" />
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="pricing">
-        <h2>Pricing</h2>
-        <p>
+      <section class="pricingSection" id="pricing">
+        <h2>Our Pricing</h2>
+        <h4>
           Pay securely online and manage the booking via desktop or our
           in-sleigh app.
-        </p>
-        <div>
-          <h3>Christmas Eve</h3>
-          <p>Our most popular plan for Santas with an established market.</p>
-          <p>$12/month</p>
-          <button aria-label="Select the Christmas Eve pricing plan">
-            Select plan
-          </button>
-          <ul>
-            <li>Unlimited collections</li>
-            <li>Worldwide accessibility</li>
-            <li>Unlimited automation actions</li>
-            <li>Access all features</li>
-            <li>24-hour support</li>
-            <li>Sync across devices</li>
-            <li>Share with more than 5 users</li>
-          </ul>
+        </h4>
+        <div class="pricingBtns">
+          <p>Monthly</p>
+          <div>
+            <button type=""></button>
+          </div>
+          <p>Annualy</p>
+        </div>
+        <div class="pricingContainer">
+          <div class="pricingCard">
+            <div class="pricingInfo">
+              <h2>Christmas Lite</h2>
+              <p>Perfect for local Santas just starting up their operations.</p>
+              <h3>$5<span>/month</span></h3>
+              <button type="">Select Plan</button>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <circle cx="10" cy="10" r="10" fill="#8F0002" />
+                  <path
+                    d="M6.25 10.625L9.25 12.5L13.75 7.5"
+                    stroke="white"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p>5 Collections</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section id="customer">
+      <section class="customerSection" id="customer">
         <h2>GiftChain is loved by users</h2>
         <div>
           <h3>Holly Snowfield</h3>
