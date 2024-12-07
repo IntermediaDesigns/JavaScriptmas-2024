@@ -332,6 +332,40 @@ main {
   gap: 2rem;
 }
 
+.pricingSection h2 {
+  font-size: 52px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--dark-red);
+}
+
+.pricingSection h4 {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #969696;
+}
+
+.pricingBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.switchBtn {
+  width: 100px;
+  height: 48px;
+  border-radius: 48px;
+  background: #F2F2FF;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+}
+
 .pricingCard {
   height: 727px;
   width: 384px;
