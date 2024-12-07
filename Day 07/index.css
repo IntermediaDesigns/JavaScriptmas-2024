@@ -26,10 +26,8 @@ body {
   object-fit: cover;
   position: absolute;
   z-index: -1;
-  opacity: .83;
+  opacity: 0.83;
 }
-
-
 
 nav {
   display: flex;
@@ -146,7 +144,6 @@ header p {
   display: block;
 }
 
-
 /* Product Section */
 main {
   display: flex;
@@ -198,7 +195,7 @@ main {
   height: 344px;
   background: #fff;
   border-radius: 15px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
 }
 
 .serviceInfo {
@@ -234,14 +231,14 @@ main {
 }
 
 .serviceInfo a {
-  color: #8F0002;
+  color: #8f0002;
   font-size: 16px;
   font-weight: 600;
 }
 
 /* Ad Section */
 .adSection {
-  background-color: #6D7D93;
+  background-color: #6d7d93;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,7 +259,6 @@ main {
 .adInfo {
   display: flex;
   flex-direction: column;
-
 }
 
 .adInfo h2 {
@@ -272,7 +268,61 @@ main {
   color: #343434;
 }
 
+.try-btn2 {
+  padding: 12px 45px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--red);
+  border: 1px solid #fff;
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
 /* Pricing Section */
+.planBtn1 {
+  padding: 12px 45px;
+  border-radius: 8px;
+  background: #8f0002;
+  color: #fff;
+  border: 1px solid #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.planBtn2 {
+  padding: 12px 45px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--red);
+  border: 1px solid #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.checkedItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.checkedItem2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.checkedItem2 p {
+  color: #fff;
+  font-weight: 300;
+}
+
 .pricingSection {
   display: flex;
   justify-content: center;
@@ -282,6 +332,115 @@ main {
   gap: 2rem;
 }
 
+.pricingCard {
+  height: 727px;
+  width: 384px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0px 10px 56px 0px rgba(0, 0, 0, 0.05);
+  padding: 50px 24px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.pricingCard2 {
+  height: 727px;
+  width: 384px;
+  border-radius: 14px;
+  background: #8f0002;
+  box-shadow: 0px 10px 56px 0px rgba(0, 0, 0, 0.05);
+  padding: 50px 24px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  border: 2px solid #8f0002;
+}
+
+.pricingContainer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.pricingInfoContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pricingInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pricingInfo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pricingInfo h2 {
+  font-size: 24px;
+  color: #470000;
+}
+
+.pricingCard2 h2 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.pricingInfo2 p {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  width: 296px;
+  margin: 1rem;
+}
+
+.pricingInfo p {
+  font-size: 16px;
+  color: #969696;
+  text-align: center;
+  font-weight: 300;
+  width: 296px;
+  margin: 1rem;
+}
+
+.pricingInfo2 span {
+  font-size: 16px;
+  color: #969696;
+  text-align: center;
+  font-weight: 300;
+}
+
+.pricingInfo span {
+  font-size: 16px;
+  color: #969696;
+  text-align: center;
+  font-weight: 300;
+}
+
+.pricingInfo h3 {
+  font-size: 56px;
+  color: #470000;
+  margin-bottom: 1.5rem;
+}
+
+.pricingCard2 h3 {
+  font-size: 56px;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
 
 /* Customer Section */
 .customerSection {
