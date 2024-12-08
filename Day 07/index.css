@@ -274,41 +274,84 @@ main {
   align-items: center;
   flex-direction: column;
   height: 686px;
+  width: 100%;
 }
 
 .adContainer {
   max-width: 1200px;
-}
-
-.adCards {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .adInfo {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  gap: 2rem;
 }
 
 .adInfo h2 {
-  font-size: 22px;
+  font-size: 52px;
   font-weight: 600;
   font-style: normal;
-  color: #343434;
+  color: #470000;
+  width: 534px;
+}
+
+.adInfo p {
+  width: 379px;
+  font-size: 14px;
+  color: #969696;
+  line-height: 170%;
 }
 
 .try-btn2 {
   padding: 12px 45px;
   border-radius: 8px;
-  background: #fff;
-  color: var(--red);
-  border: 1px solid #fff;
+  background: var(--red);
+  color: #fff;
   display: block;
   width: 200px;
   text-align: center;
   margin-top: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.try-btn2:hover {
+  background: #fff;
+  color: var(--red);
+}
+
+.elfContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.elfContainer img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: -22px;
+}
+
+.elfContainer p {
+  color: #343434;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ad {
+  width: 50%;
+}
+
+.ad img {
+  width: 630px;
+  height: 448px;
+  border-radius: 20px;
 }
 
 /* Pricing Section */
@@ -769,5 +812,3 @@ footer {
 .socialContainer li a:hover {
   color: var(--red);
 }
-
-
