@@ -1,4 +1,184 @@
-html, body {
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url("./santa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.money-card {
+  background: #2e7d32;
+  color: white;
+}
+
+.gift-card {
+  background: #c62828;
+  color: white;
+}
+
+.donation-card {
+  background: #ffa000;
+  color: white;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.card-title2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #000;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.money-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.money-stat {
+  text-align: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.stat-value {
+  font-size: 2em;
+  margin: 5px 0;
+}
+
+.stat-label {
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+.total-money {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 20px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-pay-5 {
+  background-color: #4caf50;
+  color: white;
+  font-size: large;
+}
+
+.btn-pay-10 {
+  background-color: #2196f3;
+  color: white;
+  font-size: large;
+}
+
+.btn-pay-20 {
+  background-color: #9c27b0;
+  color: white;
+  font-size: large;
+}
+
+.btn-gift {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-donate {
+  background-color: #ffc107;
+  color: black;
+}
+
+.btn-finish {
+  background-color: #607d8b;
+  color: white;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.alert {
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  margin-bottom: 15px;
+}
+
+.runs-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.run-item {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.options-container {
+  display: none;
+  margin-top: 10px;
 }

@@ -5,9 +5,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="index.css" rel="stylesheet" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
-    <h1>Hello world</h1>
-    <script type="module" src="index.js"></script>
+    <div class="container">
+      <div class="card money-card">
+        <h2 class="card-title">💰 Santa's Money Bag 💰</h2>
+        <div class="total-money">Total: $<span id="totalMoney">0</span></div>
+        <div class="money-stats">
+          <div class="money-stat">
+            <div>$5 Bills</div>
+            <div id="fivesCount">0</div>
+          </div>
+          <div class="money-stat">
+            <div>$10 Bills</div>
+            <div id="tensCount">0</div>
+          </div>
+          <div class="money-stat">
+            <div>$20 Bills</div>
+            <div id="twentiesCount">0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="card gift-card">
+          <h2 class="card-title">🎁 Gifts 🎁</h2>
+          <div class="stat-box">
+            <div class="stat-value" id="totalGifts">0</div>
+            <div class="stat-label">Gifts Given</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value" id="giftRate">0%</div>
+            <div class="stat-label">of Transactions</div>
+          </div>
+        </div>
+
+        <div class="card donation-card">
+          <h2 class="card-title">💵 Donations 💵</h2>
+          <div class="stat-box">
+            <div class="stat-value">$<span id="totalDonations">0</span></div>
+            <div class="stat-label">Total Donated</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value" id="donationCount">0</div>
+            <div class="stat-label">Times Donated</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title2">📦 Delivery Run #<span id="runNumber">1</span> 📦</h2>
+
+        <div class="button-group">
+          <button class="btn-pay-5" onclick="handlePayment(5)">Pay $5</button>
+          <button class="btn-pay-10" onclick="handlePayment(10)">
+            Pay $10
+          </button>
+          <button class="btn-pay-20" onclick="handlePayment(20)">
+            Pay $20
+          </button>
+        </div>
+
+        <div id="messageAlert" class="alert" style="display: none"></div>
+
+        <div id="optionsContainer" class="options-container">
+          <div class="button-group">
+            <button class="btn-gift" onclick="handleGift()">
+              Request Gift
+            </button>
+            <button class="btn-donate" onclick="handleDonation()">
+              Make Donation
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-finish" onclick="finishRun()">
+        Finish Run & Start New One
+      </button>
+
+      <div id="previousRuns" class="card" style="display: none">
+        <h2 class="card-title">Previous Runs Summary</h2>
+        <div id="runsSummary" class="runs-summary"></div>
+      </div>
+    </div>
+
   </body>
 </html>
