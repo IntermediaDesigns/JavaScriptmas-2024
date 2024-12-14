@@ -27,7 +27,7 @@ p.ux-message {
 /* elements */
 
 header, main {
-    width: 300px;
+    width: 310px;
     border: 2px solid #666;
 }
 
@@ -101,7 +101,7 @@ main {
 /* loading animation */
 
 .ux-loading {
-    animation: myAnim 1s linear 0s infinite normal forwards;
+    animation: myAnim 1.5s linear 0s infinite normal forwards;
     font-size: 3em;
 }
 
@@ -122,3 +122,91 @@ main {
 	}
 }
 
+.image-container {
+    position: relative;
+    width: 100%;
+    padding: 0 5px 0 0;
+    margin: 0;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-align: center;
+    width: 100%;
+}
+
+.caption p {
+    width: 290px;
+    text-wrap: wrap;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.nav-button.prev {
+    left: 10px;
+}
+
+.nav-button.next {
+    right: 10px;
+}
+
+.avatar.viewed {
+    opacity: 0.5;
+    border-color: #666;
+}
+
+.feature-image {
+    cursor: pointer;
+    width: 100%;
+}
+
+.end-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    gap: 1em;
+}
+
+.refresh-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.refresh-button:hover {
+    transform: rotate(180deg);
+}
+
+.refresh-icon {
+    width: 32px;
+    height: 32px;
+}
