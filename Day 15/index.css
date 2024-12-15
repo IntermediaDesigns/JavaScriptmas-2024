@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #024f1a;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 5px solid white;
+  z-index: 2;
+}
+
+img {
+  min-width: ;
+  float: left;
+  margin-left: -9rem;
+  z-index: 1;
+  background: transparent;
+  max-height: 1150px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 6rem;
+  z-index: 5;
+  background: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: absolute;
+  top: 5rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 4px;
+  background-color: #013110;
+  margin-top: 2.5rem;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.7rem;
+  z-index: 5;
+  background: transparent;
+  display: block;
+  position: absolute;
+  top: 16rem;
+  left: 35%;
+  letter-spacing: 0.06em;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-weight: 500;
+  width: 35%;
+  line-height: 1.5;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 4px;
+  background-color: #013110;
+  margin-top: 2.5rem;
+}
+
+.infoContainer {
+  background: #dddcdcae;
+  bottom: 0;
+  position: absolute;
+  z-index: 6;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  min-height: 310px;
+  margin-bottom: 4rem;
+}
+
+.santaTitle {
+  font-size: 5rem;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  z-index: 7;
+  background: transparent;
+  margin-top: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.65rem;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  z-index: 7;
+  background: transparent;
+  line-height: 1.5;
+}
+
+.subtitle span {
+  font-style: italic;
+  font-weight: 700;
+  background: transparent;
+}
+
+@media screen and (max-width: 565px) {
+  h1 {
+    font-size: 2.8rem;
+    right: -20%;
+  }
+
+  h1::after {
+    margin-top: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    top: 12rem;
+    width: 59%;
+    left: 40%;
+  }
+
+  h2::after {
+    margin-top: 1.5rem;
+    width: 30%;
+    left: 20%;
+  }
+
+  .infoContainer {
+    padding-top: 2rem;
+  }
+
+  .santaTitle {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 566px) and (max-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+    right: -15%;
+  }
+
+  h1::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background-color: #013110;
+    margin-top: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+    top: 15rem;
+    width: 65%;
+    left: 35%;
+  }
+
+  h2::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background-color: #013110;
+    margin-top: 2.5rem;
+  }
+
+  .infoContainer {
+    padding-top: 2rem;
+  }
+  .santaTitle {
+    font-size: 3.5rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 988px) {
+  h1 {
+    font-size: 5.5rem;
+    right: -10%;
+  }
+
+  h1::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 4px;
+    background-color: #013110;
+    margin-top: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    top: 16rem;
+    width: 55%;
+    left: 35%;
+  }
+
+  h2::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 4px;
+    background-color: #013110;
+    margin-top: 2.5rem;
+  }
+
+  .infoContainer {
+    padding-top: 2rem;
+  }
+
+  .santaTitle {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 989px) and (max-width: 1205px) {
+  h1 {
+    font-size: 6.5rem;
+    right: -5%;
+  }
+
+  h1::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 4px;
+    background-color: #013110;
+    margin-top: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.7rem;
+    top: 16rem;
+    width: 45%;
+    left: 35%;
+  }
+
+  h2::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 4px;
+    background-color: #013110;
+    margin-top: 2.5rem;
+  }
+
+  .infoContainer {
+    padding-top: 2rem;
+  }
+
+  .santaTitle {
+    font-size: 4.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .subtitle span {
+    font-size: 1.5rem;
+  }
+
+  .subtitle span {
+    font-size: 1.5rem;
+  }
+}
