@@ -4,6 +4,9 @@
   box-sizing: border-box;
   background: #024f1a;
   max-height: 100vh;
+}
+
+body {
   overflow: hidden;
 }
 
@@ -19,7 +22,6 @@ body::before {
 }
 
 img {
-  min-width: ;
   float: left;
   margin-left: -9rem;
   z-index: 1;
