@@ -146,4 +146,9 @@ h1 {
   #elf-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
+  h1 {
+    font-size: 3.7rem;
+    text-align: center;
+  }
 }
