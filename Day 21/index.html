@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santa's Toy Request Analysis</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <h1>🎅 Santa's Toy Request Analysis</h1>
+
+      <div class="stats-container">
+        <div class="stat-card">
+          <h3>Total Requests</h3>
+          <div id="total-requests">Loading...</div>
+        </div>
+        <div class="stat-card">
+          <h3>Most Popular Toy</h3>
+          <div id="most-popular">Loading...</div>
+        </div>
+        <div class="stat-card">
+          <h3>Total Locations</h3>
+          <div id="total-locations">Loading...</div>
+        </div>
+      </div>
+
+      <h2>Global Toy Popularity</h2>
+      <div class="chart-container">
+        <div class="bar-chart" id="toy-chart"></div>
+      </div>
+
+      <div class="location-analysis">
+        <h2>Location Analysis</h2>
+        <label for="location-select">Select Location:</label>
+        <select class="location-select" id="location-select"></select>
+        <div id="location-details"></div>
+      </div>
+    </div>
+  </body>
+</html>
