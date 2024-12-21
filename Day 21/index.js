@@ -135,10 +135,11 @@ function initializeDashboard() {
     select.appendChild(option);
   });
 
-  // Add "Global View" option at the top
+  // Add "Global View" option at the top and set as default selected
   const globalOption = document.createElement("option");
   globalOption.value = "";
   globalOption.textContent = "Global View";
+  globalOption.selected = true; // Set Global View as the default selected option
   select.insertBefore(globalOption, select.firstChild);
 
   select.addEventListener("change", (e) => {
