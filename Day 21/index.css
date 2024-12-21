@@ -36,6 +36,7 @@ h1 {
 .stats-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 30px;
 }
@@ -64,9 +65,11 @@ h2 {
 }
 
 .chart-container {
-    height: 400px;
+    height: 600px;
     margin: 20px 0;
     position: relative;
+
+    padding-bottom: 20px; /* Space for rotated labels */
 }
 
 .bar-chart {
@@ -75,7 +78,7 @@ h2 {
     height: 100%;
     padding: 20px;
     gap: 10px;
-    
+    min-width: min-content; /* Ensure bars don't get too squeezed */
 }
 
 .bar {
@@ -115,7 +118,7 @@ h2 {
 }
 
 .location-analysis {
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .location-select {
@@ -139,8 +142,105 @@ th, td {
     border-bottom: 1px solid #ddd;
     text-transform: capitalize;
     font-size: 1.3rem;
+    text-align: center;
 }
 
 th {
     background-color: #f8f8f8;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .dashboard {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .chart-container {
+        height: auto;
+        margin: 10px 0;
+        padding-bottom: 20px;
+        overflow-x: hidden;
+    }
+
+    .bar-chart {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .bar {
+        height: 40px !important;
+        width: 100%;
+        min-width: unset;
+        padding: 20px;
+    }
+
+    .bar-label {
+        writing-mode: horizontal-tb;
+        transform: none;
+        position: static;
+        margin: 0;
+        padding-right: 10px;
+        text-align: right;
+        font-size: 1.3rem;
+        color: yellow;
+    }
+
+    .bar-value {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        color: white;
+    }
+
+    .bar-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dashboard {
+        padding: 10px;
+    }
+
+    .chart-container {
+        height: 100%;
+    }
+
+    .bar {
+        min-width: 25px;
+    }
+
+    .bar-label {
+        font-size: 0.9rem;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .location-select {
+        width: 100%;
+    }
+
+    .location-analysis {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 300px;
+    }
 }
