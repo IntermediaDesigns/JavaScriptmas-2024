@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Buda:wght@300&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+h1 {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  font-family: "Buda", cursive;
+  font-size: 2rem;
+  color: rgb(255, 196, 48);
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+  background: radial-gradient(circle, #f1f0f0, #b7b7b7, #828282);
+  padding: 10px 30px;
+  border: 1px solid #464646;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.labels-container {
+  background: #ffffff;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin: 2rem auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 1250px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 10px;
+}
+
+.label {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #d1d1d138;
+  outline: 1px solid #d1d1d1cb;
+  min-width: 350px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.label:hover {
+    transform: scale(1.02);
+}
+
+.label-content {
+  position: relative;
+  z-index: 2;
+  padding: 15px 25px;
+  text-align: center;
+}
+
+.label-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.label-name {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 1.7rem;
+  margin-top: 8px;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.label-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.label-address {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.label-logo {
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+  }
+
+@media print {
+  body {
+    background: none;
+  }
+
+  .container h1,
+  .container h2,
+  .container button {
+    display: none;
+  }
+
+  .labels-container {
+    box-shadow: none;
+    margin: 0;
+    padding: 10mm;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .labels-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+
+  .label-name {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .labels-container {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .label {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 1rem 0;
+  }
+
+  .labels-container {
+    padding: 10px;
+    margin: 1rem auto;
+  }
+
+  .label-name {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+}
