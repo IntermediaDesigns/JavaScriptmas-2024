@@ -12,25 +12,15 @@ No stretch goal for the final day. Just stretch your legs!
 
 import { codedMessage } from "./codedMessage.js";
 
-function binaryToDecimal(binary) {
-  return parseInt(binary, 2);
-}
+const decodedMessage = codedMessage.map((bin) => {
+    let charCode = parseInt(bin, 2) - 10
+    if (charCode < 32) {
+        charCode += 96
+    }
+    return String.fromCharCode(charCode)
+}).join('')
 
-function decimalToChar(decimal) {
-  return String.fromCharCode(decimal);
-}
-
-function decodeMessage(binaryArray) {
-  return binaryArray
-    .map((binary) => decimalToChar(binaryToDecimal(binary)))
-    .join("");
-}
-
-function applyKey(decodedMessage) {
-  return decodedMessage;
-}
-
-const secretMessage = applyKey(decodeMessage(codedMessage));
+const secretMessage = decodedMessage;
 
 document.getElementById("revealButton").onclick = function () {
   document.getElementById("modal").style.display = "flex";
